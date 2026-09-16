@@ -1,0 +1,13 @@
+{
+  "fps": 30,
+  "totalFrames": 300,
+  "totalSeconds": 10,
+  "voice": "Tingting",
+  "rate": 180,
+  "lines": [
+    {"text": "这里是第一句文案", "from": 17, "dur": 60},
+    {"text": "这里是第二句文案", "from": 90, "dur": 60},
+    {"text": "品牌名", "from": 190, "dur": 40},
+    {"text": "行动号召", "from": 240, "dur": 50}
+  ]
+}

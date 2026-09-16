@@ -1,0 +1,16 @@
+{
+  "name": "BuildHub",
+  "slogan": "Vibe Coding 术语图鉴",
+  "sloganEn": "Your Vibe Coding Guide",
+  "domain": "",
+  "logoPath": "public/assets/buildhub-logo.png",
+  "style": "clean",
+  "colors": {
+    "primary": "#3559d8",
+    "ink": "#111827",
+    "bg": "#FFFFFF",
+    "accent": "#3559d8"
+  },
+  "outroCta": "现在就来试试 BuildHub",
+  "aiLabel": "AI 生成"
+}

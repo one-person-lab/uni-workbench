@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Brand Kit",
+  "description": "每个产品一份，供 video-factory 注入视频生产线（koubo 口播模板 / product-demo-video）。放各产品视频工程根目录，如 <project>/brand-kit.json。",
+  "type": "object",
+  "required": ["name", "colors"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "产品/品牌名，用于落版大字与字幕条品牌名"
+    },
+    "slogan": {
+      "type": "string",
+      "description": "中文副标 / 一句话定位，默认兼作品牌条右上角小字"
+    },
+    "sloganEn": {
+      "type": "string",
+      "description": "英文副标，多语言视频用"
+    },
+    "domain": {
+      "type": "string",
+      "description": "官网域名，用于 outro CTA，如 buildhub.app。未定留空字符串"
+    },
+    "logoPath": {
+      "type": "string",
+      "description": "logo 文件相对或绝对路径，用于品牌条/角标。建议放各产品 public/ 下并给相对路径"
+    },
+    "style": {
+      "type": "string",
+      "enum": ["neo-brutalism", "tide", "clean"],
+      "default": "clean",
+      "description": "整体视觉档。neo-brutalism/tide 从同名 skill 取 token；clean 用品牌色做轻量设计"
+    },
+    "colors": {
+      "type": "object",
+      "required": ["primary", "ink", "bg"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "description": "品牌主色，如 #3559d8。口播模板的深色背景色阶由它推导"
+        },
+        "ink": {
+          "type": "string",
+          "description": "主文字色，如 #111827"
+        },
+        "bg": {
+          "type": "string",
+          "description": "背景色，如 #FFFFFF（浅色场景用；口播是深底，不读这个）"
+        },
+        "accent": {
+          "type": "string",
+          "description": "点缀 / 进度条亮色，默认取 primary 提亮"
+        },
+        "bright": {
+          "type": "string",
+          "description": "进度条渐变端色，优先于 accent"
+        }
+      }
+    },
+    "badge": {
+      "type": "string",
+      "default": "✦",
+      "description": "品牌条左侧圆形徽标里的字符"
+    },
+    "barRight": {
+      "type": "string",
+      "description": "品牌条右上角小字，如『21 天 · 小行动』。留空则不显示"
+    },
+    "outroCta": {
+      "type": "string",
+      "description": "落版行动号召文案，默认『现在就来试试 + name』"
+    },
+    "aiLabel": {
+      "type": "string",
+      "default": "AI 生成",
+      "description": "合规溯源标注文案，2026 各平台强执行。设为空串可关闭落版标注"
+    },
+    "video": {
+      "type": "object",
+      "description": "口播模板（remotion-template）的口播专用参数，全部可选",
+      "properties": {
+        "audioFile": {
+          "type": "string",
+          "default": "koubo/narration.wav",
+          "description": "staticFile() 用的配音路径"
+        },
+        "fontFamily": {
+          "type": "string",
+          "description": "CSS font-family 串。默认 -apple-system 回退链（中文交给 CoreText 级联）"
+        },
+        "horizonGlow": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否显示底部地平线暖光（品牌色的柔光晕）"
+        },
+        "decor": {
+          "type": "object",
+          "description": "底部装饰。type=none 只留总进度条；type=cells 显示 N 个方格随进度点亮",
+          "properties": {
+            "type": {"type": "string", "enum": ["none", "cells"], "default": "none"},
+            "count": {"type": "integer", "default": 0, "description": "方格数量，如产品是 21 天周期就填 21"}
+          }
+        },
+        "palette": {
+          "type": "object",
+          "description": "精确覆盖项。只在需要像素级复刻已有片子时用；不填则全部从 colors.primary 推导",
+          "properties": {
+            "bg0": {"type": "string", "description": "渐变亮端（画面底部外侧）"},
+            "bg1": {"type": "string", "description": "渐变主背景"},
+            "bg2": {"type": "string", "description": "渐变深端（画面顶部）"},
+            "horizon": {"type": "string", "description": "渐变中段地平线色"},
+            "text": {"type": "string", "description": "主文字色；text2/3/4 由它派生透明度"},
+            "glow": {"type": "string", "description": "落版大字光晕"},
+            "horizonGlowA": {"type": "string", "description": "地平线暖光内圈"},
+            "horizonGlowB": {"type": "string", "description": "地平线暖光外圈"},
+            "cellFill": {"type": "string", "description": "刻度方格填充基色（alpha 运行时改）"},
+            "cellGlow": {"type": "string", "description": "刻度方格点亮光晕基色"}
+          }
+        },
+        "sizes": {
+          "type": "object",
+          "description": "排版尺寸覆盖（一般不用改）",
+          "properties": {
+            "safeX": {"type": "integer", "default": 84},
+            "context": {"type": "integer", "default": 36, "description": "前后句小字号"},
+            "xl": {"type": "integer", "default": 104, "description": "≤7 字"},
+            "lg": {"type": "integer", "default": 88, "description": "≤10 字"},
+            "md": {"type": "integer", "default": 74, "description": "≤14 字"},
+            "sm": {"type": "integer", "default": 62, "description": "更长的句子"}
+          }
+        },
+        "outro": {
+          "type": "object",
+          "description": "落版字号覆盖",
+          "properties": {
+            "name": {"type": "integer", "default": 132},
+            "cta": {"type": "integer", "default": 56},
+            "ai": {"type": "integer", "default": 30}
+          }
+        }
+      }
+    }
+  }
+}

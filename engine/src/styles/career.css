@@ -1,0 +1,1434 @@
+/* 数据管理页面样式 */
+.career-data-management {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backup-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.backup-list {
+  margin-top: 16px;
+}
+
+.backup-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.backup-info {
+  flex: 1;
+}
+
+.backup-time {
+  font-size: 14px;
+  color: #666;
+}
+
+.backup-item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.empty-backups {
+  color: #666;
+  margin-top: 16px;
+}
+
+.danger-zone {
+  border: 1px solid #dc2626;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+.file-input {
+  margin: 12px 0;
+}
+
+.status-message {
+  margin-top: 12px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.status-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-error {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-loading {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+/* 职业生涯模块样式 */
+
+.career-overview,
+.career-jobs,
+.career-job-detail,
+.career-applications,
+.career-current-interview,
+.career-interview-prep,
+.career-questions,
+.career-project-interview,
+.career-mock-interview,
+.career-resume,
+.career-asset-projects,
+.career-skills,
+.career-stories {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section 样式 */
+.section {
+  margin-bottom: 32px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+/* Card 样式 */
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Bar 样式 */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-btn,
+.category-select,
+.search-input {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.category-select:hover {
+  border-color: #1a1a1a;
+}
+
+.filter-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  cursor: text;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+/* Job Card 样式 */
+.job-card {
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.job-meta {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.match-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.score-bar {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: #c9a227;
+  transition: width 0.3s ease;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #c9a227;
+}
+
+/* Status 样式 */
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status--pending_evaluation {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status--ready_to_apply {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status--applied {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status--interviewing {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status--offer {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status--rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status--withdrawn {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* Button 样式 */
+.btn-primary,
+.btn-secondary {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #1a1a1a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #333;
+  transform: translateY(-1px);
+}
+
+.btn-primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.btn-secondary:hover {
+  background: #f5f5f5;
+  border-color: #1a1a1a;
+}
+
+/* Empty State 样式 */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+}
+
+.empty-state p {
+  margin-bottom: 16px;
+}
+
+/* Job Detail 样式 */
+.job-info {
+  display: grid;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.info-row .label {
+  font-weight: 500;
+  color: #666;
+}
+
+.info-row .value {
+  font-weight: 600;
+}
+
+/* Analysis 样式 */
+.analysis-overview {
+  text-align: center;
+}
+
+.match-score-large {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.score-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 8px solid #c9a227;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #c9a227;
+}
+
+.analysis-summary {
+  margin: 16px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.analysis-section ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.analysis-section li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.analysis-section li.positive {
+  color: #155724;
+}
+
+.analysis-section li.negative {
+  color: #721c24;
+}
+
+/* Tech Tags 样式 */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #666;
+  transition: background 0.2s ease;
+}
+
+.tag:hover {
+  background: #e0e0e0;
+}
+
+/* Timeline 样式 */
+.timeline {
+  margin: 16px 0;
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c9a227;
+}
+
+.timeline-date {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.timeline-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.timeline-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Application Card 样式 */
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.current-stage {
+  margin: 12px 0;
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.current-stage .label {
+  font-weight: 500;
+  color: #666;
+}
+
+.current-stage .value {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Interview Card 样式 */
+.interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.round {
+  padding: 4px 12px;
+  background: #cce5ff;
+  color: #004085;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.interview-meta {
+  display: flex;
+  gap: 16px;
+  margin: 12px 0;
+  color: #666;
+}
+
+.prep-progress-section {
+  margin: 16px 0;
+}
+
+.prep-items {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.prep-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.prep-item .status.completed {
+  color: #155724;
+}
+
+.prep-item .status.pending {
+  color: #666;
+}
+
+.next-action {
+  margin: 16px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* Tab 样式 */
+.tab-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 12px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: #f5f5f5;
+}
+
+.tab-btn.active {
+  border-bottom-color: #c9a227;
+  color: #c9a227;
+  font-weight: 600;
+}
+
+.tab-content {
+  min-height: 400px;
+}
+
+.prep-section h3 {
+  margin-bottom: 16px;
+}
+
+.prep-section ul {
+  margin: 12px 0;
+  padding-left: 20px;
+}
+
+.questions-list {
+  display: grid;
+  gap: 16px;
+}
+
+.question-item {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.question-item h4 {
+  margin-bottom: 8px;
+}
+
+.answer-textarea,
+.intro-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: inherit;
+  resize: vertical;
+  margin-top: 8px;
+}
+
+.answer-textarea:focus,
+.intro-textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+.gap-item {
+  color: #721c24;
+  padding: 8px 0;
+}
+
+/* Question Card 样式 */
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.category-tag {
+  padding: 4px 12px;
+  background: #e2e3e5;
+  color: #383d41;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.quality-score {
+  font-size: 12px;
+  color: #666;
+}
+
+.question-answer {
+  margin: 16px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.question-answer h4 {
+  margin-bottom: 8px;
+}
+
+.related-projects,
+.related-skills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.related-projects .label,
+.related-skills .label {
+  font-weight: 500;
+  color: #666;
+}
+
+/* Project Interview 样式 */
+.project-overview,
+.project-architecture,
+.project-challenges,
+.project-questions {
+  margin-bottom: 24px;
+}
+
+.project-overview h3,
+.project-architecture h3,
+.project-challenges h3,
+.project-questions h3 {
+  margin-bottom: 16px;
+}
+
+.challenge-item {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.challenge-item h4 {
+  margin-bottom: 8px;
+}
+
+.solution {
+  margin-top: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 4px;
+}
+
+.solution h5 {
+  margin-bottom: 8px;
+}
+
+/* Mock Interview 样式 */
+.interview-setup {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.setup-section {
+  margin-bottom: 24px;
+}
+
+.setup-section h3 {
+  margin-bottom: 12px;
+}
+
+.job-select,
+.direction-options {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.direction-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.direction-btn {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.direction-btn:hover {
+  background: #f5f5f5;
+}
+
+.direction-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+.start-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.interview-active {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.interview-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.interview-progress {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.conversation-history {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  max-height: 400px;
+}
+
+.conversation-item {
+  margin-bottom: 24px;
+}
+
+.message {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.message--ai {
+  background: white;
+  border-left: 4px solid #c9a227;
+}
+
+.message--user {
+  background: #e8f4f8;
+  border-left: 4px solid #0c5460;
+}
+
+.message--evaluation {
+  background: #fff3cd;
+  border-left: 4px solid #856404;
+}
+
+.message-role {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.message-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.evaluation-item {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.suggestions {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #856404;
+}
+
+.answer-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.answer-textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+/* Interview Completed 样式 */
+.interview-completed {
+  padding: 24px;
+}
+
+.completion-summary {
+  text-align: center;
+}
+
+.overall-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+.score-label {
+  color: #666;
+}
+
+.score-value {
+  font-weight: bold;
+  color: #c9a227;
+  font-size: 32px;
+}
+
+.evaluation-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.detail-item {
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.detail-item .label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.detail-item .value {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.strengths-improvements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.strengths,
+.improvements {
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.strengths h4,
+.improvements h4 {
+  margin-bottom: 12px;
+}
+
+.strengths ul,
+.improvements ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.interview-summary {
+  margin: 24px 0;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.interview-summary h4 {
+  margin-bottom: 8px;
+}
+
+.interview-summary p {
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
+.completed-actions {
+  margin-top: 24px;
+}
+
+/* Resume 样式 */
+.resume-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-section {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.resume-section:last-child {
+  border-bottom: none;
+}
+
+.resume-section h2 {
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.info-display h3 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.info-display p {
+  color: #666;
+  margin: 4px 0;
+}
+
+.edit-form {
+  display: grid;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #666;
+}
+
+.form-group input,
+.form-group textarea,
+.edit-textarea {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px rgba(26, 26, 26, 0.1);
+}
+
+.edit-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.experience-item,
+.project-item {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.experience-item h3,
+.project-item h3 {
+  margin-bottom: 8px;
+}
+
+.period {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.add-btn {
+  margin-top: 12px;
+}
+
+.skills-display {
+  display: grid;
+  gap: 16px;
+}
+
+.skill-group h3 {
+  margin-bottom: 12px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.save-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Asset Projects 样式 */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.project-asset-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.project-type {
+  padding: 4px 12px;
+  background: #e2e3e5;
+  color: #383d41;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.project-description {
+  color: #666;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.project-details {
+  margin-bottom: 16px;
+}
+
+.detail-item {
+  margin-bottom: 12px;
+}
+
+.detail-item .label {
+  font-weight: 500;
+  color: #666;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.project-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-item .label {
+  font-size: 12px;
+  color: #666;
+}
+
+.stat-item .value {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.project-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Skills 样式 */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.skill-description {
+  color: #666;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.skill-level {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.level-bar {
+  flex: 1;
+  height: 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.level-fill {
+  height: 100%;
+  background: #c9a227;
+  transition: width 0.3s ease;
+}
+
+.level-value {
+  font-weight: bold;
+  color: #c9a227;
+}
+
+.skill-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.meta-item {
+  display: flex;
+  gap: 4px;
+}
+
+.meta-item .label {
+  color: #666;
+}
+
+.meta-item .value {
+  font-weight: 600;
+}
+
+/* Stories 样式 */
+.stories-actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stories-list {
+  display: grid;
+  gap: 16px;
+}
+
+.story-card {
+  position: relative;
+}
+
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.usage-count {
+  font-size: 12px;
+  color: #666;
+}
+
+.star-content {
+  margin-bottom: 16px;
+}
+
+.star-section {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.star-section h4 {
+  margin-bottom: 8px;
+  color: #c9a227;
+}
+
+.star-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.story-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Modal 样式 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: #1a1a1a;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Loading 和 Error 样式 */
+.loading,
+.error {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+}
+
+.error {
+  color: #721c24;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .career-overview,
+  .career-jobs,
+  .career-job-detail,
+  .career-applications,
+  .career-current-interview,
+  .career-interview-prep,
+  .career-questions,
+  .career-project-interview,
+  .career-mock-interview,
+  .career-resume,
+  .career-asset-projects,
+  .career-skills,
+  .career-stories,
+  .career-data-management {
+    padding: 16px;
+  }
+
+  .analysis-grid,
+  .direction-options,
+  .evaluation-details,
+  .strengths-improvements {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    flex-direction: column;
+  }
+
+  .filter-btn,
+  .category-select,
+  .search-input {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .interview-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .backup-actions {
+    flex-direction: column;
+  }
+
+  .backup-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .backup-item-actions {
+    width: 100%;
+  }
+
+  .backup-item-actions button {
+    flex: 1;
+  }
+}

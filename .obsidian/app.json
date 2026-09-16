@@ -1,0 +1,10 @@
+{
+  "userIgnoreFilters": [
+    "engine/",
+    "skills/",
+    "identity/",
+    "docs/",
+    "scripts/",
+    ".agents/"
+  ]
+}

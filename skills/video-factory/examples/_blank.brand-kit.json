@@ -1,0 +1,22 @@
+{
+  "name": "品牌名",
+  "slogan": "一句话定位",
+  "domain": "",
+  "logoPath": "",
+  "style": "clean",
+  "colors": {
+    "primary": "#3559d8",
+    "ink": "#111827",
+    "bg": "#FFFFFF",
+    "accent": "#3559d8"
+  },
+  "badge": "✦",
+  "barRight": "",
+  "outroCta": "",
+  "aiLabel": "AI 生成",
+  "video": {
+    "audioFile": "koubo/narration.wav",
+    "horizonGlow": true,
+    "decor": {"type": "none", "count": 0}
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "示例产品",
+  "slogan": "通过小行动，成为你想成为的人",
+  "domain": "",
+  "logoPath": "",
+  "style": "clean",
+  "colors": {
+    "primary": "#f4c77c",
+    "ink": "#101927",
+    "bg": "#101927",
+    "accent": "#ffb86c"
+  },
+  "badge": "✦",
+  "barRight": "21 天 · 小行动",
+  "outroCta": "今天，先动一下",
+  "aiLabel": "AI 生成",
+  "video": {
+    "audioFile": "koubo/narration.wav",
+    "horizonGlow": true,
+    "decor": {"type": "cells", "count": 21},
+    "palette": {
+      "bg0": "#16253a",
+      "bg1": "#101927",
+      "bg2": "#0b1421",
+      "horizon": "#1b3047",
+      "text": "#f4f7fb",
+      "glow": "rgba(255,220,160,0.45)",
+      "horizonGlowA": "rgba(255,216,150,0.30)",
+      "horizonGlowB": "rgba(255,190,120,0.13)",
+      "cellFill": "rgba(244,199,124,0.95)",
+      "cellGlow": "rgba(255,220,160,1)"
+    },
+    "sizes": {"safeX": 84, "context": 36, "xl": 104, "lg": 88, "md": 74, "sm": 62},
+    "outro": {"name": 132, "cta": 56, "ai": 30}
+  }
+}

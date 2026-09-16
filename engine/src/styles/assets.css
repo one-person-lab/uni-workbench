@@ -1,0 +1,427 @@
+/* 资产模块样式 */
+
+.asset-library,
+.asset-detail,
+.product-library,
+.product-detail {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Filter Bar 样式 */
+.filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: #1a1a1a;
+}
+
+.filter-btn.active {
+  background: #1a1a1a;
+  color: white;
+  border-color: #1a1a1a;
+}
+
+/* Asset Grid 样式 */
+.assets-grid,
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+/* Asset Card 样式 */
+.asset-card {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.asset-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.asset-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.asset-card-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.asset-card-description {
+  color: #666;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+.asset-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Asset Type Badge 样式 */
+.asset-type-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.asset-type-badge--blue { background: #e3f2fd; color: #1976d2; }
+.asset-type-badge--green { background: #e8f5e9; color: #388e3c; }
+.asset-type-badge--purple { background: #f3e5f5; color: #7b1fa2; }
+.asset-type-badge--orange { background: #fff3e0; color: #f57c00; }
+.asset-type-badge--gray { background: #f5f5f5; color: #616161; }
+.asset-type-badge--indigo { background: #e8eaf6; color: #3f51b5; }
+.asset-type-badge--pink { background: #fce4ec; color: #c2185b; }
+.asset-type-badge--teal { background: #e0f2f1; color: #00796b; }
+.asset-type-badge--cyan { background: #e0f7fa; color: #0097a7; }
+.asset-type-badge--slate { background: #f5f5f5; color: #455a64; }
+
+/* Status Badge 样式 */
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge--published {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge--draft {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge--archived {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* Asset Detail 样式 */
+.asset-detail-header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.asset-content {
+  margin-bottom: 24px;
+}
+
+.asset-content pre {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.asset-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.asset-meta .label {
+  font-weight: 500;
+  color: #666;
+}
+
+.asset-meta .value {
+  color: #1a1a1a;
+}
+
+.asset-tags {
+  margin-bottom: 24px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.asset-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Product Card 样式 */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.product-description {
+  color: #666;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.product-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-weight: 500;
+}
+
+.product-pricing {
+  margin-bottom: 16px;
+}
+
+.price-free {
+  color: #388e3c;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.price-paid {
+  color: #c9a227;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.product-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.product-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* Product Detail 样式 */
+.author-section {
+  margin-bottom: 24px;
+}
+
+.author-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.author-section .author-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.author-info h3 {
+  margin: 0 0 8px 0;
+}
+
+.author-bio {
+  color: #666;
+  margin: 0;
+}
+
+.author-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.author-socials a {
+  color: #666;
+  text-decoration: none;
+}
+
+.author-socials a:hover {
+  color: #1a1a1a;
+}
+
+.pricing-section {
+  margin-bottom: 24px;
+}
+
+.price-large {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.price-large .amount {
+  color: #c9a227;
+}
+
+.price-large .type {
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+}
+
+.assets-section {
+  margin-bottom: 24px;
+}
+
+.assets-list {
+  display: grid;
+  gap: 8px;
+}
+
+.asset-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.asset-type {
+  font-weight: 500;
+}
+
+.asset-included {
+  color: #388e3c;
+}
+
+.stats-section {
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stats-grid .stat-item {
+  text-align: center;
+  padding: 16px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.stats-grid .label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stats-grid .value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* Floating Action Button */
+.floating-action {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #666;
+}
+
+.empty-state p {
+  margin-bottom: 16px;
+}
+
+/* Button Styles */
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #1a1a1a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #333;
+}
+
+.btn-secondary {
+  background: white;
+  color: #1a1a1a;
+  border: 1px solid #e0e0e0;
+}
+
+.btn-secondary:hover {
+  background: #f5f5f5;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}

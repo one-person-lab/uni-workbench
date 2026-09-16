@@ -1,0 +1,36 @@
+{
+  "$comment": [
+    "视频工程的「拉取清单」—— 人工维护，pull-product.mjs 只读不写。",
+    "填好 product.root 指向你的产品仓库，npm run pull 会把那里的设计令牌生成到 src/generated/。",
+    "只放「拉取型」内容：产品已有、不该有第二份的。叙事编排属于创作型，别放这里。"
+  ],
+
+  "product": {
+    "name": "<产品名>",
+    "root": "../../<your-product-repo>",
+    "$comment": "相对本文件的路径。产品搬家只改这一行。"
+  },
+
+  "sources": [
+    {
+      "id": "tokens",
+      "kind": "css-vars",
+      "from": "<path/to/theme.css>",
+      "select": "<.theme-dark>",
+      "out": "src/generated/product.ts",
+      "$comment": "产品主题令牌。键名按你视频工程里要用的名字写，值是产品侧的 CSS 变量名。",
+      "map": {
+        "brand": "--brand",
+        "brandSoft": "--brand-soft",
+        "bgPage": "--bg-page",
+        "text": "--text-primary",
+
+        "exampleFallback": {
+          "var": "--not-in-product",
+          "fallback": "#000000",
+          "note": "产品侧没有就静默用兜底；没写 fallback 会在 pull 时报错"
+        }
+      }
+    }
+  ]
+}

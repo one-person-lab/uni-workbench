@@ -1,0 +1,4 @@
+interface:
+  display_name: "姜胡说非官方自媒体行动系统"
+  short_description: "从真实经历出发，完成定位、选题、内容、复盘与知识资产沉淀"
+  default_prompt: "使用 $jianghushuo 判断并完成我当前内容任务中最重要的一步。"

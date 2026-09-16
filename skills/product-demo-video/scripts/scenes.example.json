@@ -1,0 +1,34 @@
+[
+  {
+    "id": "intro",
+    "title": "示例产品",
+    "subtitle": "别人给你「知道」，我们让你「做到」",
+    "badge": "每天一次上线，成为你想成为的人",
+    "narration": "示例产品。不教你大道理，只帮你把想做的事，真的做起来。",
+    "url": "https://me.example.com.com/",
+    "type": "intro",
+    "steps": [{ "do": "wait", "ms": 2000 }]
+  },
+  {
+    "id": "feature1",
+    "title": "挑一个副本",
+    "subtitle": "选中长期目标，押注，然后开始",
+    "narration": "先挑一个你想推进的副本，押上一笔挑战金，让拖延变得有代价。",
+    "url": "https://me.example.com.com/",
+    "type": "tool",
+    "steps": [
+      { "do": "wait", "ms": 800 },
+      { "do": "scroll", "y": 320, "times": 2, "hold": 600 },
+      { "do": "scroll", "y": -320, "times": 2, "hold": 600 }
+    ]
+  },
+  {
+    "id": "outro",
+    "title": "现在就开始上线",
+    "subtitle": "me.example.com.com ｜ 免费",
+    "narration": "网址在屏幕上，今天就上线第一天。",
+    "url": "https://me.example.com.com/",
+    "type": "outro",
+    "steps": [{ "do": "wait", "ms": 2000 }]
+  }
+]

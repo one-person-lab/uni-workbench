@@ -1,0 +1,57 @@
+engine/node_modules/
+engine/dist/
+qa/
+.DS_Store
+
+# Local environment and credential files. Keep sanitized examples trackable.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Private keys, certificates, and common credential exports.
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+
+# Local runtime state that may contain private user data.
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+
+engine/config/attention.local.json
+
+# ---------------------------------------------------------------------------
+# Obsidian：vault 根 = 本仓库根，两棵树（knowledge-base/ + workbench/）都在其中。
+# 结构性配置（app.json / core-plugins.json 等）入库，便于重建；
+# 本地窗口状态随打开文件变动，不入库。
+# ---------------------------------------------------------------------------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# ---------------------------------------------------------------------------
+# 第三方参考仓库：整份克隆自他人，永远不作为本仓库内容提交
+# （出处记入 ATTRIBUTION.md）
+# ---------------------------------------------------------------------------
+
+# 旧独立仓库的元数据（原 career-os，已随 career/ 迁出为 career-hub）；保留模式以防误提交
+/.git.disabled/
+**/.git.disabled/
+
+# 工具与系统杂项
+.worktrees/
+.tmp/
+*.tmp
+Thumbs.db
+
+# 第三方技能安装产物：由 skills-lock.json 锁定来源与哈希，可一键复现，不入库
+/.agents/skills/
